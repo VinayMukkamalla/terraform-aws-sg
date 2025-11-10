@@ -3,7 +3,7 @@ resource "aws_security_group" "main" {
   name =  local.common_name_suffix
   vpc_id = var.vpc_id
 
-  egress = {
+  egress {
     from_port   =  0 
     to_port     =  0
     protocol    =  "-1"
